@@ -1,313 +1,254 @@
 # IPL MindReader AI 🏏🤖
 
-> **Akinator की तरह IPL खेलाड़ियों को पहचानने वाला एक अत्याधुनिक AI ऐप्लिकेशन**
+> **An advanced AI app that identifies IPL players like Akinator**
 
-## 🎯 परियोजना का विवरण
+## Project Overview
 
-**IPL MindReader AI** एक उत्पादन-तैयार हैकेथॉन परियोजना है जो आर्टिफिशियल इंटेलिजेंस और आधुनिक वेब तकनीकों को जोड़ती है। यह ऐप्लिकेशन प्रोबेबिलिस्टिक रीजनिंग का उपयोग करके IPL क्रिकेटरों को केवल 8-12 स्मार्ट सवालों में सही तरीके से पहचान लेता है।
+**IPL MindReader AI** is a production-ready hackathon project that combines artificial intelligence with modern web technologies. It identifies IPL cricketers in just 8 to 12 smart questions using probabilistic reasoning and adaptive decision-making.
 
-### मुख्य विशेषताएं:
-- ✨ **शानदार UI/UX** - साइबरपंक थीम के साथ गोल्ड और इलेक्ट्रिक ब्लू रंग
-- 🧠 **एडवांस्ड AI रीजनिंग** - एंट्रॉपी-आधारित प्रश्न चयन
-- 🔥 **Gemini AI Integration** - डायनामिक प्रश्न और व्याख्या के लिए
-- 📊 **रीयल-टाइम एनालिटिक्स** - गेम परफॉर्मेंस ट्रैकिंग
-- 🎮 **1000+ IPL खिलाड़ियों का डेटा** - व्यापक और सटीक डेटासेट
-- 🚀 **क्लाउड-रेडी** - Vercel पर तुरंत डिप्लॉय करें
+### Key Features
+- ✨ Premium UI/UX with a cyberpunk theme, gold highlights, and electric blue accents
+- 🧠 Advanced AI reasoning powered by entropy-based question selection
+- 🔥 Gemini AI integration for dynamic prompts and explanations
+- 📊 Real-time analytics for tracking gameplay performance
+- 🎮 1000+ IPL player profiles in a large generated dataset
+- 🚀 Deployment-ready for Vercel and modern cloud hosts
 
-## 🛠️ तकनीकी स्टैक
+## Tech Stack
 
-### Frontend:
-- **Next.js 14** - React फ्रेमवर्क
-- **TailwindCSS** - स्टाइलिंग
-- **Framer Motion** - एनिमेशन
-- **Firebase** - रीयल-टाइम डेटा और एनालिटिक्स
+### Frontend
+- Next.js 14 - React framework
+- Tailwind CSS - styling system
+- Framer Motion - animations and transitions
+- Firebase - real-time data and analytics support
 
-### Backend:
-- **Node.js + Express** - REST API सर्वर
-- **Google Generative AI (Gemini)** - AI-चालित प्रश्न
-- **Firebase Admin SDK** - डेटा पर्सिस्टेंस
-- **Custom Probabilistic Reasoning Engine** - IPL डेटा एनालिसिस
+### Backend
+- Node.js + Express - REST API server
+- Google Generative AI (Gemini) - AI-driven question generation
+- Firebase Admin SDK - data persistence
+- Custom probabilistic reasoning engine - IPL dataset analysis
 
-### डेटा:
-- **1000+ जेनरेटेड IPL प्लेयर प्रोफाइलस** - रोल, टीम, अवार्ड्स, विशेषताएं
+### Data
+- 1000+ generated IPL player profiles covering roles, teams, awards, and traits
 
-## 🚀 शुरुआत करना
+## Getting Started
 
-### पहले स्टेप्स:
+### Install Dependencies
 
 ```bash
-# रिपो को क्लोन करें
 git clone https://github.com/ABHISHEKABHI52/AI-Akinator-IPL.git
 cd "AI-Akinator-IPL"
-
-# डिपेंडेंसीज इंस्टॉल करें
 npm install
 
-# बैकएंड डिपेंडेंसीज
 cd backend
 npm install
 
-# फ्रंटएंड डिपेंडेंसीज
 cd ../frontend
 npm install
 ```
 
-### एनवायरनमेंट सेटअप:
+### Environment Setup
 
-**backend/.env.local** बनाएं:
+Create `backend/.env.local`:
+
 ```env
 GEMINI_API_KEY=your_gemini_api_key_here
 BACKEND_PORT=4001
 FIREBASE_PROJECT_ID=ipl-mindreader-ai
 ```
 
-**frontend/.env.local** बनाएं:
+Create `frontend/.env.local`:
+
 ```env
 NEXT_PUBLIC_FIREBASE_API_KEY=your_firebase_api_key
 NEXT_PUBLIC_FIREBASE_PROJECT_ID=ipl-mindreader-ai
 NEXT_PUBLIC_API_BASE_URL=http://localhost:4001
 ```
 
-### डेवलपमेंट सर्वर शुरू करें:
+### Start Development Servers
 
-**टर्मिनल 1 - बैकएंड:**
+Backend:
+
 ```bash
 cd backend
 npm run dev
-# http://localhost:4001 पर चलेगा
 ```
 
-**टर्मिनल 2 - फ्रंटएंड:**
+Frontend:
+
 ```bash
 cd frontend
 npm run dev
-# http://localhost:3000 पर चलेगा
 ```
 
-## 📱 कैसे खेलें
+The backend runs at `http://localhost:4001` and the frontend runs at `http://localhost:3000`.
 
-1. 🏠 **लैंडिंग पेज** पर जाएं
-2. ▶️ **"Play Now"** बटन क्लिक करें
-3. 🤔 एक IPL खिलाड़ी की सोच लीजिए
-4. ❓ AI के सवालों का ईमानदारी से जवाब दें
-5. 🎯 AI आपकी सोचे हुए खिलाड़ी को सही तरीके से पहचान लेगा!
+## How to Play
 
-## 🎮 गेम फ़्लो
+1. Open the landing page.
+2. Click **Play Now**.
+3. Think of an IPL player.
+4. Answer the AI's questions honestly.
+5. Watch the system identify the player.
 
+## Game Flow
+
+```text
+Landing -> Start Game -> Questions -> 8-12 Answers -> AI Guess -> Feedback
 ```
-लैंडिंग → गेम शुरू → सवाल-जवाब → (8-12 सवाल) → AI का अनुमान → फीडबैक
-```
 
-### AI की रीजनिंग प्रक्रिया:
-1. **फिल्टरिंग** - उत्तरों के आधार पर खिलाड़ियों को हटाता है
-2. **कॉन्फिडेंस कैलकुलेशन** - सर्वश्रेष्ठ उम्मीदवार की संभावना दिखाता है
-3. **एंट्रॉपी-आधारित सवाल** - अगला सवाल चुनने के लिए सूचना लाभ
-4. **80% थ्रेसहोल्ड** - जब विश्वास पर्याप्त हो तो अनुमान लगाता है
+### Reasoning Pipeline
+1. Filtering removes players that do not match the answers.
+2. Confidence scoring measures how likely the leading candidate is correct.
+3. Entropy-based question selection chooses the most informative next question.
+4. An 80% threshold triggers a final guess when confidence is high enough.
 
-## 📊 डेटासेट
+## Dataset
 
-### खिलाड़ी प्रोफाइल में शामिल जानकारी:
-- नाम, देश, रोल (बल्लेबाज़/गेंदबाज़/ऑलराउंडर)
-- IPL टीम्स, कप्तानी का अनुभव
-- अवार्ड्स (ऑरेंज कैप, पर्पल कैप)
-- बैटिंग स्टाइल, बोलिंग टाइप
-- फिनिशर, आक्रामक बल्लेबाज़, डेथ बोलर स्टेटस
-- लीजेंड/रिटायर्ड स्टेटस
+### Player Profile Fields
+- Name, country, and role
+- IPL teams and captaincy history
+- Awards such as Orange Cap and Purple Cap
+- Batting style and bowling type
+- Finisher, aggressive batter, and death bowler flags
+- Legend or retired status
 
-### डेटासेट जेनरेट करना:
+### Regenerate the Dataset
 
 ```bash
 cd backend
 npm run generate:dataset
-# यह 1000 यूनिक IPL प्लेयर प्रोफाइल बनाएगा
 ```
 
-## 🔧 API एंडपॉइंट्स
+This generates 1000 unique IPL player profiles.
 
-### गेम API:
+## API Endpoints
 
-**गेम शुरू करें:**
-```
+### Game API
+
+Start a game:
+
+```http
 POST /game/start
-Response: {
-  gameId, question, candidates, currentQuestionId, confidence
-}
 ```
 
-**सवाल का जवाब दें:**
-```
+Answer a question:
+
+```http
 POST /game/answer
 Body: { gameId, answer: "yes|no|maybe|unknown" }
-Response: { question, candidates, confidence, currentQuestionId }
 ```
 
-**AI का अनुमान:**
-```
+Make a guess:
+
+```http
 POST /game/guess
 Body: { gameId }
-Response: { playerName, confidence, reasoning }
 ```
 
-**गेम की स्थिति:**
-```
+Check game status:
+
+```http
 GET /game/status?gameId=<gameId>
-Response: { gameState, totalQuestions, candidates }
 ```
 
-### एडमिन API:
+### Admin API
 
-**डेटासेट जानकारी:**
-```
+Dataset info:
+
+```http
 GET /admin/dataset/info
-Response: { playerCount, uniqueRoles, samplePlayers }
 ```
 
-**डेटासेट रीजेनरेट करें:**
-```
+Regenerate dataset:
+
+```http
 POST /admin/dataset/generate
-Response: { status, playerCount }
 ```
 
-## 📈 एनालिटिक्स डैशबोर्ड
+## Analytics Dashboard
 
-`/analytics` पेज पर देखें:
-- गेम एक्यूरेसी रेट
-- औसत प्रश्न संख्या
-- सर्वाधिक पहचाने गए खिलाड़ी
-- कॉन्फिडेंस ट्रेंड चार्ट
+Open `/analytics` to view:
+- Accuracy rate
+- Average number of questions
+- Top guessed players
+- Confidence trend chart
 
-## 🎨 थीम और डिज़ाइन
+## Design System
 
-### कलर पैलेट:
-- **प्राइमरी**: नीोन गोल्ड (#FFD700)
-- **सेकेंडरी**: इलेक्ट्रिक ब्लू (#00D4FF)
-- **बैकग्राउंड**: लक्जरी ब्लैक (#0A0A0A)
-- **एक्सेंट**: साइबरपंक पर्पल
+### Color Palette
+- Primary: Neon gold `#FFD700`
+- Secondary: Electric blue `#00D4FF`
+- Background: Luxury black `#0A0A0A`
+- Accent: Cyberpunk purple
 
-### डिज़ाइन तत्व:
-- ✨ ग्लासमॉर्फिज़्म प्रभाव
-- 🌊 स्टेडियम लाइटिंग एनिमेशन
-- 🎬 सिनेमैटिक ट्रांजिशन्स
-- 📱 पूरी तरह रेस्पॉन्सिव
+### Visual Style
+- Glassmorphism panels
+- Stadium lighting effects
+- Cinematic transitions
+- Fully responsive layout
 
-## 🧪 टेस्टिंग
-
-### मैनुअल टेस्टिंग:
+## Testing
 
 ```bash
-# सभी सर्वर्स रनिंग होने चाहिए
-npm run dev  # रूट डायरेक्टरी से
-
-# टेस्ट करें: http://localhost:3000
-# 1. एक खिलाड़ी सोचें
-# 2. सभी सवालों का जवाब दें
-# 3. AI की सही पहचान की जांच करें
+npm run dev
 ```
 
-## 🚀 प्रोडक्शन डिप्लॉयमेंट
+Then open `http://localhost:3000` and verify the full game flow by starting a match and answering questions.
 
-### Vercel पर डिप्लॉय करें:
+## Production Deployment
+
+### Vercel
 
 ```bash
-# अपने Vercel खाते से कनेक्ट करें
 vercel --prod
-
-# या GitHub से ऑटो-डिप्लॉय सेटअप करें
 ```
 
-### Render/Railway पर बैकएंड:
+### Backend Hosting
 
-1. नई प्रोजेक्ट बनाएं
-2. GitHub रिपो कनेक्ट करें
-3. बिल्ड कमांड सेट करें: `npm install`
-4. स्टार्ट कमांड: `cd backend && npm start`
-5. एनवायरनमेंट वेरिएबल्स जोड़ें
+You can deploy the Express backend to Render, Railway, or any Node.js-compatible host.
 
-## 📁 प्रोजेक्ट स्ट्रक्चर
+1. Connect your GitHub repository.
+2. Set the build command to `npm install`.
+3. Set the start command to `cd backend && npm start`.
+4. Add the required environment variables.
 
-```
+## Project Structure
+
+```text
 IPL-Akinator-AI/
 ├── backend/
-│   ├── src/
-│   │   ├── index.js
-│   │   ├── app.js
-│   │   ├── config/
-│   │   │   ├── firebase.js
-│   │   │   └── gemini.js
-│   │   ├── lib/
-│   │   │   └── iplReasoning.js
-│   │   ├── services/
-│   │   │   ├── sessionStore.js
-│   │   │   └── analyticsService.js
-│   │   ├── routes/
-│   │   │   ├── gameRoutes.js
-│   │   │   └── adminRoutes.js
-│   │   └── data/
-│   │       ├── playerSeeds.js
-│   │       └── ipl-players.generated.json
-│   ├── scripts/
-│   │   └── generateDataset.js
-│   ├── package.json
-│   └── .env.local
 ├── frontend/
-│   ├── app/
-│   │   ├── page.js (लैंडिंग)
-│   │   ├── game/
-│   │   ├── thinking/
-│   │   ├── guess/
-│   │   ├── feedback/
-│   │   ├── analytics/
-│   │   ├── admin/
-│   │   └── globals.css
-│   ├── lib/
-│   │   ├── api.js
-│   │   ├── firebase.js
-│   │   └── game-store.js
-│   ├── components/
-│   │   ├── site-shell.js
-│   │   ├── game-console.js
-│   │   ├── player-card.js
-│   │   └── charts.js
-│   ├── package.json
-│   ├── next.config.js
-│   ├── postcss.config.cjs
-│   ├── tailwind.config.js
-│   └── .env.local
-├── package.json (रूट)
+├── package.json
 ├── .env.example
 ├── .gitignore
 └── README.md
 ```
 
-## 🤝 योगदान
+## Contributing
 
-इस प्रोजेक्ट को बेहतर बनाने में मदद करना चाहते हैं?
+1. Fork the repository.
+2. Create a branch for your feature.
+3. Commit your changes.
+4. Push the branch.
+5. Open a pull request.
 
-1. फोर्क करें
-2. नई ब्रांच बनाएं: `git checkout -b feature/amazing-feature`
-3. बदलाव कमिट करें: `git commit -m 'Add amazing feature'`
-4. पुश करें: `git push origin feature/amazing-feature`
-5. Pull Request खोलें
+## License
 
-## 📝 लाइसेंस
+This project is released under the MIT License.
 
-यह प्रोजेक्ट MIT लाइसेंस के तहत है।
+## Credits
 
-## 🙏 धन्यवाद
-
-इस हैकेथॉन प्रोजेक्ट के लिए:
 - Google Gemini API
 - Firebase
-- Next.js कम्युनिटी
-- IPL क्रिकेट डेटा
+- Next.js community
+- IPL cricket data inspiration
 
-## 📞 संपर्क
+## Contact
 
-- **GitHub**: [@ABHISHEKABHI52](https://github.com/ABHISHEKABHI52)
-- **Email**: abhishekabhijit.work@gmail.com
+- GitHub: [@ABHISHEKABHI52](https://github.com/ABHISHEKABHI52)
+- Email: abhishekabhijit.work@gmail.com
 
 ---
 
-**⭐ अगर यह प्रोजेक्ट पसंद आया तो Star दे दीजिए!**
-
-**Made with 🔥 for IPL Cricket Fans**
+Made with passion for IPL cricket fans.
