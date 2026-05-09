@@ -247,7 +247,7 @@ This project is released under the MIT License.
 ## Contact
 
 - GitHub: [@ABHISHEKABHI52](https://github.com/ABHISHEKABHI52)
-- Email: abhishekabhijit.work@gmail.com
+- Email: abhishekkumar995517@gmail.com
 
 ---
 
