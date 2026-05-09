@@ -1,0 +1,13 @@
+.next
+node_modules
+.env
+.env.local
+.DS_Store
+dist
+coverage
+backend/data/ipl-players.generated.json
+backend/.env.local
+frontend/.env.local
+backend/.firebase
+frontend/.vercel
+*.log

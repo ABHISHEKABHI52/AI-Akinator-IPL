@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  --bg: #050608;
+  --panel: rgba(10, 12, 18, 0.7);
+  --panel-strong: rgba(12, 15, 24, 0.92);
+  --stroke: rgba(255, 255, 255, 0.1);
+  --gold: #f7c948;
+  --blue: #53c9ff;
+  --text: #f4f6fb;
+  --muted: rgba(244, 246, 251, 0.72);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--bg);
+  color: var(--text);
+  font-family: Inter, "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::selection {
+  background: rgba(247, 201, 72, 0.28);
+}
+
+.grid-noise {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 56px 56px;
+}
+
+.glass {
+  background: var(--panel);
+  border: 1px solid var(--stroke);
+  backdrop-filter: blur(18px);
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.35);
+}
+
+.glass-strong {
+  background: var(--panel-strong);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  backdrop-filter: blur(22px);
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, #fff7d1 0%, #f7c948 35%, #53c9ff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.hero-radial {
+  position: absolute;
+  inset: -20% -10% auto;
+  height: 760px;
+  background: radial-gradient(circle at 50% 20%, rgba(247, 201, 72, 0.18), transparent 40%),
+    radial-gradient(circle at 70% 0%, rgba(83, 201, 255, 0.25), transparent 24%),
+    radial-gradient(circle at 20% 15%, rgba(126, 87, 255, 0.14), transparent 20%);
+  filter: blur(18px);
+  pointer-events: none;
+}
+
+.aurora {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, transparent 0%, rgba(83, 201, 255, 0.08) 22%, transparent 40%),
+    linear-gradient(240deg, transparent 0%, rgba(247, 201, 72, 0.09) 20%, transparent 38%);
+  mix-blend-mode: screen;
+  pointer-events: none;
+}
+
+.card-grid {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.05), transparent);
+}
+
+.scanline {
+  position: relative;
+  overflow: hidden;
+}
+
+.scanline::after {
+  content: '';
+  position: absolute;
+  top: -30%;
+  left: -10%;
+  width: 120%;
+  height: 20%;
+  background: linear-gradient(180deg, transparent, rgba(83, 201, 255, 0.2), transparent);
+  animation: scan 5s linear infinite;
+}
+
+@keyframes scan {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(560%); }
+}
+
+@keyframes drift {
+  0%, 100% { transform: translate3d(0, 0, 0); }
+  50% { transform: translate3d(0, -10px, 0); }
+}
+
+.drift {
+  animation: drift 7s ease-in-out infinite;
+}
